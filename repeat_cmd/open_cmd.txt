@@ -6,7 +6,7 @@ DELAY 2000
 
 
 STRING Invoke-WebRequest -Uri "
-STRING https://raw.githubusercontent.com/woodypacker123456/flipper_test/refs/heads/main/repeat_cmd/script.batt
+STRING https://raw.githubusercontent.com/woodypacker123456/flipper_test/refs/heads/main/repeat_cmd/script.bat
 STRING " -OutFile "script.bat"
 ENTER
 DELAY 500
