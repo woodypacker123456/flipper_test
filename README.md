@@ -1,1 +1,1 @@
-I aint responsible for anything happening with these codes
+I aint responsible for anything that happens with these codes
